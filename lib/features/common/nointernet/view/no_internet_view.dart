@@ -1,5 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:greentech/main.dart';
 import 'package:provider/provider.dart';
 import '../../../home/view/home_view.dart';
 import '../../../../product/component/button/special_button.dart';
@@ -27,7 +28,7 @@ class NoInternetView extends StatelessWidget {
             builder: (context, model, child) {
               if (model.isOnline != null) {
                 return model.isOnline!
-                    ? const HomeView()
+                    ?  BottomBarScreen()
                     : _bodyView(context, viewModel);
               }
               return Center(

@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:greentech/features/home/view/home_view.dart';
+import 'package:greentech/settings/prfofile_list.dart';
 import 'package:provider/provider.dart';
 import 'features/common/nointernet/view/no_internet_view.dart';
 import 'product/manager/connectivity_manager.dart';
@@ -67,11 +68,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       },
       
       {
-        'page': const HomeView(),
+        'page': const SettingsPage(),
       },
     
-      
-     
     ];
     super.initState();
   }
