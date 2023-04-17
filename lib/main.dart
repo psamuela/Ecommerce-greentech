@@ -128,8 +128,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             label: 'Home',
             ),
 
-           
-             BottomNavigationBarItem(
+                BottomNavigationBarItem(
             icon: new Icon(Icons.person),
             label: "My Profile",
             backgroundColor: Colors.blue,
